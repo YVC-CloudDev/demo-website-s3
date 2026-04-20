@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beginner AWS basics for students: account setup, core services, and cost safety.">
+  <title>AWS Basics | Cloud Launchpad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Cloud <span>Launchpad</span></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="aws-basics.html" aria-current="page">AWS Basics</a>
+        <a href="github-basics.html">GitHub Basics</a>
+        <a href="project-lab.html">Project Lab</a>
+        <a href="resources.html">Resources</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <section class="section">
+        <span class="badge">Estimated time: 45 min</span>
+        <h1 class="page-title">AWS Basics for beginners</h1>
+        <p class="meta">Goal: understand AWS building blocks and set up a safe student account.</p>
+      </section>
+
+      <section class="section grid grid-2">
+        <article class="card">
+          <h2>Learning objectives</h2>
+          <ul>
+            <li>Create an AWS account and secure it</li>
+            <li>Understand region and availability zone basics</li>
+            <li>Know when to use S3, EC2, and Lambda</li>
+            <li>Enable budget alerts to stay inside free tier</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Prerequisites</h2>
+          <ul>
+            <li>Email address and phone number</li>
+            <li>Bank card for account verification</li>
+            <li>A notebook to track what you create</li>
+          </ul>
+          <div class="warn">
+            AWS may charge if you exceed limits. Always remove unused resources.
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>Core concepts</h2>
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>Regions</h3>
+            <p>Regions are physical locations (for example, eu-west-1). Pick one region and stay consistent in tutorials.</p>
+          </article>
+          <article class="card">
+            <h3>Availability Zones</h3>
+            <p>Multiple isolated zones inside each region. They help build reliable apps.</p>
+          </article>
+          <article class="card">
+            <h3>Service model</h3>
+            <p>AWS provides many services. You start with a few and combine them into one project.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Beginner service map</h2>
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>S3</h3>
+            <p>Store static files such as HTML, CSS, images, and documents.</p>
+          </article>
+          <article class="card">
+            <h3>EC2</h3>
+            <p>Create virtual servers when you need full control of an operating system.</p>
+          </article>
+          <article class="card">
+            <h3>Lambda</h3>
+            <p>Run code on demand without managing a server.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section card">
+        <h2>Budget alert quick setup</h2>
+        <p>Use this checklist before starting any lab:</p>
+        <ol>
+          <li>Open AWS Billing dashboard</li>
+          <li>Go to Budgets and create a monthly cost budget</li>
+          <li>Set budget value to $5</li>
+          <li>Add email notifications at 60% and 90%</li>
+          <li>Confirm alert emails are arriving</li>
+        </ol>
+        <div class="ok">If you complete this once, you can safely explore more AWS tutorials.</div>
+      </section>
+
+      <section class="section">
+        <p><a class="btn btn-primary" href="project-lab.html">Continue to Project Lab</a></p>
+        <p class="meta">Last updated: April 20, 2026</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Next page: GitHub workflow fundamentals and collaboration basics.</p>
+    </div>
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beginner Git and GitHub essentials for student projects.">
+  <title>GitHub Basics | Cloud Launchpad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Cloud <span>Launchpad</span></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="aws-basics.html">AWS Basics</a>
+        <a href="github-basics.html" aria-current="page">GitHub Basics</a>
+        <a href="project-lab.html">Project Lab</a>
+        <a href="resources.html">Resources</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <section class="section">
+        <span class="badge">Estimated time: 35 min</span>
+        <h1 class="page-title">GitHub Basics for students</h1>
+        <p class="meta">Goal: push code confidently and collaborate without breaking main branch.</p>
+      </section>
+
+      <section class="section grid grid-2">
+        <article class="card">
+          <h2>Learning objectives</h2>
+          <ul>
+            <li>Understand repo, commit, branch, and pull request</li>
+            <li>Use a simple feature branch workflow</li>
+            <li>Write a basic README for your project</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Safe workflow for beginners</h2>
+          <ol>
+            <li>Create a new branch for each task</li>
+            <li>Commit small changes with clear messages</li>
+            <li>Open a pull request into main</li>
+            <li>Merge only when checks pass</li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="section card">
+        <h2>Starter command sequence</h2>
+        <p>Run this from your project folder:</p>
+        <div id="git-commands" class="code-block">git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin YOUR_REPO_URL
+git push -u origin main</div>
+        <button class="copy-btn" data-copy-target="git-commands">Copy commands</button>
+      </section>
+
+      <section class="section">
+        <h2>Common mistakes and fixes</h2>
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>Mistake: giant commits</h3>
+            <p>Fix: commit each small lesson step separately so your history is readable.</p>
+          </article>
+          <article class="card">
+            <h3>Mistake: editing directly on main</h3>
+            <p>Fix: always create a branch first, even for tiny updates.</p>
+          </article>
+          <article class="card">
+            <h3>Mistake: no README</h3>
+            <p>Fix: include setup, architecture, and screenshots for recruiters and teammates.</p>
+          </article>
+          <article class="card">
+            <h3>Mistake: unclear commit messages</h3>
+            <p>Fix: use patterns like "Add S3 bucket policy section" or "Fix CloudFront path".</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <p><a class="btn btn-primary" href="project-lab.html">Use these skills in Project Lab</a></p>
+        <p class="meta">Last updated: April 20, 2026</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Next page: deploy your first static site with AWS and publish it on GitHub.</p>
+    </div>
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

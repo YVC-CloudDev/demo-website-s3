@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Project lab: deploy a static website to AWS S3 and CloudFront, then publish on GitHub.">
+  <title>Project Lab | Cloud Launchpad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Cloud <span>Launchpad</span></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="aws-basics.html">AWS Basics</a>
+        <a href="github-basics.html">GitHub Basics</a>
+        <a href="project-lab.html" aria-current="page">Project Lab</a>
+        <a href="resources.html">Resources</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <section class="section">
+        <span class="badge">MVP Project</span>
+        <h1 class="page-title">Deploy a static site on AWS + GitHub</h1>
+        <p class="meta">Outcome: a live CloudFront URL and a public GitHub repository.</p>
+        <div class="progress-wrap">
+          <label for="lab-progress">Checklist progress</label>
+          <progress id="lab-progress" class="progress" value="0" max="7">0%</progress>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="warn"><strong>Before you start:</strong> verify your AWS budget alert is enabled. This project is low-cost but not risk-free.</div>
+      </section>
+
+      <section class="section timeline">
+        <article class="step">
+          <label><input type="checkbox" data-step-check> Step 1: Create project files locally (index.html, styles, scripts)</label>
+        </article>
+        <article class="step">
+          <label><input type="checkbox" data-step-check> Step 2: Create an S3 bucket and enable static website hosting</label>
+        </article>
+        <article class="step">
+          <label><input type="checkbox" data-step-check> Step 3: Upload your static files to the bucket</label>
+        </article>
+        <article class="step">
+          <label><input type="checkbox" data-step-check> Step 4: Create a CloudFront distribution with your bucket as origin</label>
+        </article>
+        <article class="step">
+          <label><input type="checkbox" data-step-check> Step 5: Verify website loads from CloudFront URL</label>
+        </article>
+        <article class="step">
+          <label><input type="checkbox" data-step-check> Step 6: Push source code to GitHub with a README and screenshot</label>
+        </article>
+        <article class="step">
+          <label><input type="checkbox" data-step-check> Step 7: Add live URL and architecture notes to your README</label>
+        </article>
+      </section>
+
+      <section class="section card">
+        <h2>Suggested README structure</h2>
+        <div id="readme-template" class="code-block"># Student Cloud Website
+
+## Live Demo
+CloudFront URL here
+
+## What I learned
+- AWS S3 static hosting
+- CloudFront distribution basics
+- GitHub workflow and project documentation
+
+## Architecture
+S3 bucket (origin) -> CloudFront (HTTPS CDN)
+
+## Cost safety
+Monthly budget alerts configured with AWS Budgets</div>
+        <button class="copy-btn" data-copy-target="readme-template">Copy README template</button>
+      </section>
+
+      <section class="section ok">
+        When finished, you should be able to explain every piece of your deployment in 60 seconds.
+      </section>
+
+      <section class="section">
+        <p><a class="btn btn-secondary" href="resources.html">Open helpful resources</a></p>
+        <p class="meta">Last updated: April 20, 2026</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Tip: keep all screenshots in a docs folder in your repository.</p>
+    </div>
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
